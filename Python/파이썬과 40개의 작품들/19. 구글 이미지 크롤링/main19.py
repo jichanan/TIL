@@ -66,5 +66,5 @@ for k,i in enumerate(links):
     url = i
     urllib.request.urlretrieve(url, "C:\\Users\\user\\Desktop\\작업\\TIL\\Python\\파이썬과 40개의 작품들\\19. 구글 이미지 크롤링\\사진다운로드"+str(k)+".jpg")
 
-print("다운로드 완료하였습니다.")
+print("다운로드 완료하였습니다!")
 
