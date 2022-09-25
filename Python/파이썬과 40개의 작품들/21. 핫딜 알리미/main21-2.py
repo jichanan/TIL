@@ -17,11 +17,13 @@ while True:
         for i in range(len(titles)):
             if "두유" in titles[i].text:
                 message = titles[i].text + urls[i].get_attribute('href')
-                print(message)
-                token = '봇 api 토큰 입력' 
-                id = '채팅방 고유 id 입력'
-                bot = telegram.Bot(token)
-                bot.sendMessage(chat_id=id, text=message)
+                if message not in send_message_list:
+                    print(message)
+                    send_message_list.append
+                    token = 'api 토큰' 
+                    id = '봇 id'
+                    bot = telegram.Bot(token)
+                    bot.sendMessage(chat_id=id, text=message)
         time.sleep(60.0 * 5)
     except KeyboardInterrupt:
         break
