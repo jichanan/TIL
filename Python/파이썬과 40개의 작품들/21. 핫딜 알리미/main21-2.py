@@ -19,7 +19,7 @@ while True:
                 message = titles[i].text + urls[i].get_attribute('href')
                 if message not in send_message_list:
                     print(message)
-                    send_message_list.append
+                    send_message_list.append(message)
                     token = 'api 토큰' 
                     id = '봇 id'
                     bot = telegram.Bot(token)
