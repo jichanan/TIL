@@ -2,7 +2,7 @@ from cv2 import IMREAD_UNCHANGED
 import numpy as np
 import cv2
 
-ff = np.fromfile('ㅋㅋ.jpg', np.uint8)
+ff = np.fromfile('돈.jpg', np.uint8)
 img = cv2.imdecode(ff, IMREAD_UNCHANGED)
 img = cv2.resize(img, dsize=(0, 0), fx=1, fy=1.0, interpolation=cv2.INTER_LINEAR)
 
