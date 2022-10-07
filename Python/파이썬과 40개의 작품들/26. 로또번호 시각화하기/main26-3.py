@@ -24,4 +24,4 @@ num_list += list(df_from_excel['당첨번호6'].astype(int))
 count = Counter(num_list)
 most_num = count.most_common(45)
 
-print((num_list))
+print(most_num)
