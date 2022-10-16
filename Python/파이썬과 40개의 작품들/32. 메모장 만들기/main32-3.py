@@ -13,10 +13,10 @@ def save_file():
 
 def maker():
     help_view = Toplevel(window)
-
     help_view.geometry("300x50+800+300")
     help_view.title("만든이")
-    
+    lb = Label(help_view, text = "안지찬")
+    lb.pack()
 
 window = Tk()
 window.title("메모장")
